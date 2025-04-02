@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>AYUDA - ENGINET</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script src="https://kit.fontawesome.com/af1d67052b.js" crossorigin="anonymous"></script>
+</head>
+<body class="is-preload">
+    <div id="page-wrapper">
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">ENGINET</a></h1>
+            <nav id="nav">
+                <ul>
+                    <li class="special">
+                        <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                        <div id="menu">
+                            <ul>
+                                <li><i class="fa-solid fa-house fa-bounce"></i><a href="index.html">INICIO</a></li>
+                                <li><i class="fa-solid fa-phone-volume fa-beat"></i><a href="generic.html">CONTACTANOS</a></li>
+                                <li><i class="fa-solid fa-handshake-angle fa-beat"></i><a href="ayuda.html">AYUDA</a></li>
+                                <li><i class="fa-solid fa-inbox fa-beat"></i><a href="elements.html">BUZON DE QUEJAS</a></li>
+                                <li><i class="fa-solid fa-map fa-beat"></i><a href="mapa.html">MAPA</a></li>
+                                <li><i class="fa-brands fa-rocketchat fa-beat"></i><a href="chat.html">CHAT</a></li>
+                                <li><i class="fa-solid fa-user-plus fa-beat"></i><a href="registro.php">Sign Up</a></li>
+                                <li><i class="fa-solid fa-arrow-right-to-bracket fa-beat"></i><a href="login.php">Log In</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <article id="main">
+            <header>
+                <h2>AYUDA</h2>
+                <p>Encuentra aquí toda la información necesaria sobre el uso del sistema.</p>
+            </header>
+            <section class="wrapper style5">
+                <div class="inner">
+                    <section>
+                        <h3>Preguntas Frecuentes</h3>
+                        <h4>¿Cómo crear una cotización?</h4>
+                        <p>Accede a la sección "Crear Cotización" desde el menú, completa los datos requeridos y genera la cotización automáticamente.</p>
+                        
+                        <h4>¿Cómo modificar una cotización?</h4>
+                        <p>En la sección "Historial de Cotizaciones" puedes ver y editar cotizaciones previas si tienes los permisos adecuados.</p>
+
+                        <h4>¿Cómo contactar al soporte técnico?</h4>
+                        <p>Visita la sección "Contáctanos" donde encontrarás los medios de contacto con nuestro equipo de soporte.</p>
+
+                        <h4>¿Dónde puedo ver mis quejas o solicitudes?</h4>
+                        <p>Las quejas o solicitudes se pueden revisar en el "Buzón de Quejas" dentro de tu perfil.</p>
+                    </section>
+                    
+                    <!-- Formulario de Quejas o Sugerencias -->
+                    <section>
+                        <h3>Deja tu Queja o Sugerencia</h3>
+                        <form action="procesar_queja.php" method="POST">
+                            <label for="nombre">Nombre (Opcional):</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                            
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu queja o sugerencia" required></textarea>
+                            
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </section>
+                </div>
+            </section>
+        </article>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; ENGINET</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+        </footer>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

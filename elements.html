@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Buzón de Quejas</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://kit.fontawesome.com/af1d67052b.js" crossorigin="anonymous"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">ENGINET</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><i class="fa-solid fa-house fa-bounce"></i><a href="index.html">INICIO</a></li>
+											<li><i class="fa-solid fa-phone-volume fa-beat"></i><a href="generic.html">CONTACTANOS</a></li>
+											<li><i class="fa-solid fa-handshake-angle fa-beat"></i><a href="ayuda.html">AYUDA</a></li>
+											<li><i class="fa-solid fa-inbox fa-beat"></i><a href="elements.html">BUZON DE QUEJAS</a></li>
+											<li><i class="fa-solid fa-map fa-beat"></i><a href="mapa.html">MAPA</a></li>
+											<li><i class="fa-brands fa-rocketchat fa-beat"></i><a href="chat.html">CHAT</a></li>
+											<li><i class="fa-solid fa-user-plus fa-beat"></i><a href="registro.php">Sign Up</a></li>
+											<li><i class="fa-solid fa-arrow-right-to-bracket fa-beat"></i><a href="login.php">Log In</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>BUZÓN DE QUEJAS</h2>
+							<p>Bienvenido al Buzón de Quejas.</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<!-- Mensaje de confirmación -->
+								<div id="mensaje" style="display: none; padding: 10px; background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; margin-bottom: 15px; text-align: center;">
+									¡Tu queja ha sido enviada correctamente!
+								</div>
+
+								<section>
+									<h4>Buzón de Quejas</h4>
+									<p>Nos esforzamos por mejorar nuestros servicios. Déjanos tu queja o sugerencia.</p>
+									<form action="procesar_queja.php" method="POST">
+										<input type="text" name="nombre" placeholder="Tu Nombre" required>
+										<textarea name="queja" placeholder="Escribe tu queja o sugerencia" required></textarea>
+										<button type="submit" class="sumit"><i> ENVIAR </i></button>
+									</form>
+								</section>
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				const params = new URLSearchParams(window.location.search);
+				if (params.has('success')) {
+					document.getElementById("mensaje").style.display = "block";
+					setTimeout(() => {
+						history.replaceState({}, document.title, window.location.pathname);
+					}, 3000);
+				}
+			</script>
+
+	</body>
+</html>
